@@ -15,6 +15,6 @@ public:
  ~book();
  string getName();
  book(const book &);
- book& operator=(book);
+ book& operator=(book); 
  int getId();
 };
