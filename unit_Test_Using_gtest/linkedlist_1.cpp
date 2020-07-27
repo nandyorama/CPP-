@@ -29,10 +29,10 @@ class Sample
     void print()
     {
         Node * cur = head;//
-        while(head)
+        while(cur)
         {
-        cout<<head->data<<"--";
-        head = head->next;
+        cout<<cur->data<<"--";
+        cur = cur->next;
         }
     cout<<endl;
     }
