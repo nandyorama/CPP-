@@ -12,9 +12,16 @@ int main()
 { 
     int i; 
   
+    vector<int> v(5,0);
+    std::generate(v.begin(), v.end(), [n = 0] () mutable { return n++; });
+ 
+    for (auto iv: v) {
+        std::cout << iv << " ";
+    }
+    std::cout << "\n";
     // Declaring a vector of size 10 
     vector<int> v1(10); 
-  
+
     // using std::generate_n 
     std::generate_n(v1.begin(), 10, fun); 
   
